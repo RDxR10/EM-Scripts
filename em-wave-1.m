@@ -8,7 +8,7 @@ dx = Xf/1000;
 space = 0:dx:Xf;
 unitv = ones(1,length(space));
 % Plot
-Figure
+figure
 f = w/(2*pi);
 for time=0:1/(20*f):1/f,
   En = subs(E,{x,t},{space,unitv*time});
